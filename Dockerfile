@@ -9,7 +9,7 @@ RUN apk update && \
 	bash \
 	openssh-client
 
-RUN pip install awscli \
+RUN pip install awscli awsebcli \
     && rm -rf /tmp/* /var/tmp/* /root/.cache/pip
 
 ENV DOCKER_BUCKET get.docker.com
